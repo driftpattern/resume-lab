@@ -5,6 +5,9 @@
   --social-icon-color: #FFFFFF;
 }
 
+
+
+
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
@@ -16,15 +19,20 @@ header {
   width: 100%;
   background-color: var(--primary-color);
   margin: 0;
+  overflow: hidden; /* Change 'auto' to 'hidden' */
 }
 
-.social-icons {
+.social-links {
   display: flex;
   justify-content: flex-end;
   padding: 5px;
 }
 
-.social-icons a {
+.social-links li {
+  list-style: none;
+}
+
+.social-links a {
   color: var(--social-icon-color);
   text-decoration: none;
   margin-left: 10px;
@@ -35,18 +43,20 @@ header {
   width: 820px;
 }
 
-#resume {
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+main {
+  overflow: auto;
 }
 
-#profile {
+.profile {
   display: flex;
+  flex-direction: column;
 }
 
-#profile-card {
+.profile-card {
   width: 425px;
 }
 
-#profile-data {
-  flex-grow: 1;
+.profile-data,
+.profile-body {
+  width: 100%;
 }
