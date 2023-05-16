@@ -30,7 +30,8 @@ header {
 .social-links {
   display: flex;
   justify-content: flex-end;
-  padding: 5px;
+  align-items: center;
+  padding: 10px;
 }
 
 .social-links li {
@@ -69,7 +70,7 @@ main {
   flex-basis: calc(100% - 425px);
 }
 
-.profile-body {
+.profile-summary {
   width: 100%;
   margin-top: 10px;
 }
