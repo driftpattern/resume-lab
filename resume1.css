@@ -6,20 +6,25 @@
 }
 
 
+/* Reset Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-
+/* Global Styles */
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* Header Styles */
 header {
   height: 40px;
   width: 100%;
   background-color: var(--primary-color);
-  margin: 0;
-  overflow: hidden; /* Change 'auto' to 'hidden' */
 }
 
 .social-links {
@@ -38,25 +43,33 @@ header {
   margin-left: 10px;
 }
 
+/* Container Styles */
 .container {
   margin: 0 auto;
   width: 820px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Main Styles */
 main {
   overflow: auto;
 }
 
+/* Profile Section Styles */
 .profile {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .profile-card {
   width: 425px;
 }
 
-.profile-data,
+.profile-data {
+  flex-basis: calc(100% - 425px);
+}
+
 .profile-body {
   width: 100%;
+  margin-top: 10px;
 }
