@@ -1,12 +1,14 @@
 :root {
   --primary-color: #F44336;
+  --outer-body-bgcolor: #ddd;
+  --container-bgcolor: #f1f4f9;
   --secondary-color: #4CAF50;
   --accent-color: #2196F3;
   --social-icon-color: #FFFFFF;
 }
 
 
-/* Reset Styles */
+/* Normalize Browser Defaults */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +20,7 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--outer-body-bgcolor);
 }
 
 /* Header Styles */
@@ -41,13 +44,14 @@ header {
 .social-links a {
   color: var(--social-icon-color);
   text-decoration: none;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 /* Container Styles */
 .container {
   margin: 0 auto;
   width: 820px;
+  background-color: var(--container-bgcolor);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -57,20 +61,23 @@ main {
 }
 
 /* Profile Section Styles */
-.profile {
+.profile, .resume {
   display: flex;
   flex-wrap: wrap;
 }
 
 .profile-card {
   width: 425px;
+  background-color:darkkhaki;
 }
 
 .profile-data {
   flex-basis: calc(100% - 425px);
+  background-color:darkseagreen;
 }
 
 .profile-summary {
   width: 100%;
   margin-top: 10px;
+  background-color:lightgoldenrodyellow;
 }
